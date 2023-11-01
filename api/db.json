@@ -1,0 +1,46 @@
+{
+  "characters": [
+    {
+      "id": 1,
+      "name": "Han Solo",
+      "occupation": "Smuggler",
+      "weapon": "Blaster Pistol",
+      "cartoon": true
+    },
+    {
+      "id": 2,
+      "name": "Luke Skywalker",
+      "occupation": "Jedi Knight",
+      "weapon": "Lightsaber",
+      "cartoon": false
+    },
+    {
+      "id": 3,
+      "name": "Sponge Bob",
+      "occupation": "Lives under the sea",
+      "weapon": "Crabby Patty",
+      "cartoon": true
+    },
+    {
+      "name": "Bal Bako",
+      "occupation": "Developer",
+      "weapon": "computer",
+      "cartoon": true,
+      "id": 4
+    },
+    {
+      "name": "Yildiz",
+      "occupation": "Singer",
+      "cartoon": "on",
+      "weapon": "Song",
+      "id": 5
+    },
+    {
+      "name": "kumburgaz",
+      "occupation": "burgaz",
+      "weapon": "kinali",
+      "cartoon": true,
+      "id": 6
+    }
+  ]
+}
