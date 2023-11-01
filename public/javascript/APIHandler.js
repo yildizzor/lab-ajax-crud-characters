@@ -13,6 +13,8 @@ class APIHandler {
 
   getOneRegister(characterId) {
     return this.api.get(`/characters/${characterId}`);
+
+    
   }
 
   createOneRegister(characterInfo) {

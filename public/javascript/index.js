@@ -89,7 +89,7 @@ window.addEventListener("load", () => {
       const name = document.getElementById("edit-name").value;
       const occupation = document.getElementById("edit-occupation").value;
       const weapon = document.getElementById("edit-weapon").value;
-      const cartoon = document.getElementById("edit-cartoon").value;
+      const cartoon = document.getElementById("edit-cartoon").checked;
 
       const characterInfo = {
         id: id,
@@ -100,13 +100,15 @@ window.addEventListener("load", () => {
       };
 
       charactersAPI
-        .updateOneRegister(characterInfo)
+        .updateOneRegister(id, characterInfo)
         .then((character) => {
-          document.getElementById("send-data").style.backgroundColor = "green";
+          document.getElementById("send-edit-data").style.backgroundColor =
+            "green";
         })
 
         .catch((error) => {
-          document.getElementById("send-data").style.backgroundColor = "red";
+          document.getElementById("send-edit-data").style.backgroundColor =
+            "red";
           console.error(error);
         });
     });
@@ -118,7 +120,7 @@ window.addEventListener("load", () => {
 
       const name = document.getElementById("create-name").value;
       const occupation = document.getElementById("create-occupation").value;
-      const cartoon = document.getElementById("create-cartoon").value === "on";
+      const cartoon = document.getElementById("create-cartoon").checked;
       const weapon = document.getElementById("create-weapon").value;
 
       const characterInfo = {
